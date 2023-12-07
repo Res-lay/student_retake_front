@@ -17,7 +17,7 @@ function SubjectPage({func_logout}) {
     const [maxFontSize, setMaxFontsize] = useState(window.innerWidth <= 440 ? 9 : 5);
     const [phoneVersion, setPhoneVersion] = useState(window.innerWidth <= 440);
     const axiosInstance = axios.create({
-        baseURL: 'https://students-retake-91s0.onrender.com/api',
+        baseURL: 'https://students-retake-back.onrender.com/api',
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('JwtToken')}`
         }

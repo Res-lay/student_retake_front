@@ -23,7 +23,7 @@ function GroupDataForm(){
     const [message, setMessage] = useState("User successfully created");
 
     const axiosTemplate = axios.create({
-        baseURL: 'https://students-retake-91s0.onrender.com/api/admin/groups',
+        baseURL: 'https://students-retake-back.onrender.com/api/admin/groups',
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('JwtToken')}`
         }

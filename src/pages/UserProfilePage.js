@@ -51,7 +51,7 @@ function UserProfilePage({logout}) {
                 const formData = new FormData();
                 formData.append("file", selectedFile);
 
-                axios.post("https://students-retake-91s0.onrender.com/api/user/upload-photo", formData, {
+                axios.post("https://students-retake-back.onrender.com/api/user/upload-photo", formData, {
                     headers: {
                         "Content-Type" : "multipart/form-data",
                         "Authorization " : `Bearer ${localStorage.getItem("JwtToken")}`

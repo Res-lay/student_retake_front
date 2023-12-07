@@ -33,7 +33,7 @@ export function PieChart() {
 
     async function fetchData(){
         const response = await axios.create({
-            baseURL: "https://students-retake-91s0.onrender.com/api/student/get-performance",
+            baseURL: "https://students-retake-back.onrender.com/api/student/get-performance",
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('JwtToken')}`
             }

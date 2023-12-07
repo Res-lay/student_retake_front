@@ -20,7 +20,7 @@ function TeacherProfilePage(logout) {
 
 
     const axiosInstance = axios.create({
-        baseURL: "https://students-retake-91s0.onrender.com/api/user",
+        baseURL: "https://students-retake-back.onrender.com/api/user",
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('JwtToken')}`
         }

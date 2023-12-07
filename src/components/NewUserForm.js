@@ -22,7 +22,7 @@ function NewUserForm(){
 
     const handleSubmit = async(e) => {
         e.preventDefault();
-        await axios.post("https://students-retake-91s0.onrender.com/api/auth/signup", formData).then(response => {
+        await axios.post("https://students-retake-back.onrender.com/api/auth/signup", formData).then(response => {
             if (response.status === 200){
                 setMessage("User successfully created");
                 setMessageType("correct")

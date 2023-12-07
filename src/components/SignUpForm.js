@@ -39,7 +39,7 @@ function SignUpForm({ changeProcess }) {
                 setErrorMessage("Passwords do not match");
                 return;
             }
-            const response = await axios.post("https://students-retake-91s0.onrender.com/api/auth/signup", formData);
+            const response = await axios.post("https://students-retake-back.onrender.com/api/auth/signup", formData);
             if (response.status === 200) {
                 changeProcess("login");
             }
