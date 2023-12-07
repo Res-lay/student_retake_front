@@ -1,0 +1,265 @@
+
+.contentWrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    margin-left: 18%;
+}
+.banner{
+    color: #858282;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1{
+    color: white;
+    font-weight: 300;
+}
+h3{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.info{
+    display:flex;
+    padding-bottom: 20px;
+    width: 85%;
+    justify-content: space-around;
+    color: white;
+    height: 40px;
+}
+
+.infoParam{
+    font-weight: 300;
+}
+
+.subjectCard{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.subjectCard:nth-child(even){
+    background: rgba(33, 33, 33, 0.6);
+}
+
+.subjectCard:nth-child(odd){
+    background: rgba(190, 184, 184, 0.1);
+}
+
+.sortWrapper{
+    display: flex;
+    height: 14vw;
+    justify-content: center;
+    width: 100%;
+}
+
+.sortField, .expandedSortField{
+    padding: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    border:1px solid #1c1d21;
+    width: 60%;
+
+    align-items: center;
+    display: flex;
+    transition: .3s;
+    justify-content: space-evenly;
+}
+
+.sortField{
+    height: 5vw;
+}
+.expandedSortField{
+    border-color: #858282;
+    height: 13vw;
+}
+.expandedSortField .section{
+    display: flex;
+}
+.expandedSortField .clearButton{
+    display: flex;
+}
+.expandedSortField .sortBanner{
+    display: none;
+}
+
+.sortField:hover{
+    border-color: #858282;
+}
+
+.sortKeyWrapper{
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+}
+
+.sortKey, .sortKey2 {
+    border-radius: .5rem;
+    background: #858282;
+    color: #211f1f;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: .2s ease-in;
+
+}
+.sortKey:hover, .sortKey2:hover{
+    background: #424242;
+    color: #8F9BB3;
+}
+.sortKey {
+    width: 30px;
+    height: 30px;
+}
+
+.sortKey2 {
+    width: 80px;
+    height: 30px;
+}
+
+.activeButton{
+    background: #8F9BB3;
+    color: #111113;
+    box-shadow: 0 0 1px black;
+}
+.sortBanner{
+    color: #858282;
+    cursor: pointer;
+    font-size: 2.4vw;
+    text-align: center;
+    width: 100%;
+}
+
+.clearButton{
+    background: #858282;
+    border-radius: .5rem;
+    width: 80px;
+    display: none;
+    justify-content: center;
+    height: 40px;
+    color: #211f1f;
+    cursor: pointer;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: .2s;
+}
+
+.clearButton:hover{
+    background: #424242;
+    color: #8F9BB3;
+}
+
+
+.section{
+    /*display: flex;*/
+    flex-direction: column;
+    gap: 5px;
+    display: none;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.subjectName{
+    width: 300px;
+}
+.searchWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search{
+    margin-top: 2%;
+    height: 2rem;
+    background: rgba(190, 184, 184, 0.29);
+    border-radius: 1rem;
+    transition: .5s;
+    text-align: center;
+    color: white;
+    outline: none;
+    width: 60%;
+}
+
+.search:focus{
+    border-color: #8F9BB3;
+}
+
+@media screen and (max-width: 440px) {
+    .banner{
+        font-size: 30px;
+        height: 12vw;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        margin: 0;
+    }
+    .sortWrapper{
+        height: 19vw;
+    }
+    .expandedSortField{
+        width: 90vw;
+        height: 18vw;
+    }
+    .sortWrapper{
+        margin-top: 5%;
+    }
+    .sortBanner{
+        font-size: 3vw;
+    }
+    .search{
+        height: 1.5rem;
+    }
+    .sectionName{
+        font-size: .7rem;
+    }
+    .sortKeyWrapper{
+        font-size: .7rem;
+    }
+    .sortKey{
+        width: 20px;
+        height: 20px;
+    }
+    .sortKey2{
+        width: 50px;
+        height: 25px;
+    }
+    .clearButton{
+        width: 50px;
+        height: 25px;
+        font-size: .7rem;
+    }
+    .infoParam{
+        font-size: 1.1rem;
+    }
+    .subjectCard{
+        margin-left: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .subjectName{
+        width: 104px;
+        font-size: 1rem;
+    }
+    .subjectMark{
+        font-size: 1rem;
+    }
+    .info{
+        width: 80%;
+    }
+
+}

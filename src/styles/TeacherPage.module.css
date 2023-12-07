@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;800&display=swap');
+
+.mainWrapper{
+    display:flex;
+    min-height: 100vh;
+    width: 85%;
+    margin-left: 5vw;
+}
+.mainPart{
+    display:flex;
+    flex-direction: column;
+    height: auto;
+    margin-left: 10vw;
+    width: 100%;
+}
+
+.profileAvatar{
+    display: flex;
+    width: 100%;
+    height: 210px;
+    justify-content: center;
+    border-radius: 1rem;
+    background: #FFDFD3;
+    background-size: cover;
+}
+
+.avatarContainer{
+    border-radius: 50%;
+    position: relative;
+    margin-top: 10%;
+    width: 150px;
+    height: 145px;
+}
+.avatar{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.photoCameraContainer{
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .3s;
+    background: #FEC8D8;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    cursor: pointer;
+    height: 145px;
+}
+
+.avatarContainer:hover .photoCameraContainer{
+    opacity: 1;
+}
+
+.photoCamera{
+    width: 60px;
+    height: 60px;
+}
+
+
+.profileButton{
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.profileInfo{
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    align-items: start;
+    justify-content: space-evenly;
+}
+.staticProfileData{
+    border-radius: 1rem;
+    width: 300px;
+    min-height: 230px;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+    display: flex;
+    border: 1px solid rgba(133, 130, 130, 0.37);
+    box-shadow: 0 0 10px rgb(17, 17, 19);
+    backdrop-filter: blur(3px);
+    background: rgba(33, 40, 50, 0.31);
+}
+.profileData{
+    position: relative;
+    border-radius: 1rem;
+    width: fit-content;
+    gap: 20px;
+    display: flex;
+    box-shadow: 0 0 10px rgb(17, 17, 19);
+    backdrop-filter: blur(3px);
+    background: rgba(33, 33, 33, 0.3);
+}
+.profilePoint{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.user_info_text{
+    color: #FEC8D8;
+    font-weight: Bold
+}
+.user_info_text2{
+    color: #8592A7;
+    font-weight: Bold;
+    font-size: 1.1rem
+}
+.sectionName{
+    color:#858282;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 440px){
+    .staticProfileData{
+        margin-top: 5%;
+
+        padding: 10px 0 0 0;
+    }
+    .mainPart{
+        margin-top: 20%;
+    }
+}

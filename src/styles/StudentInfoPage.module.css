@@ -1,0 +1,103 @@
+.mainWrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.title {
+    width: 100%;
+    color: #a09b9b;
+    text-align: center;
+}
+
+.formWrapper {
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.formStyles {
+    padding: 50px 0 50px 0;
+    box-shadow: 0 0 10px rgba(9, 5, 5, 0.3);
+    backdrop-filter: blur(20px);
+    width: 50%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+}
+
+.formSection {
+    color: #a09b9b;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.formField {
+    border-radius: .5rem;
+    outline: none;
+    color: #858282;
+    font-size: 15px;
+    text-align: center;
+    background-color: transparent;
+    height: 30px;
+    border: 1px solid #8F9BB3;
+    transition: .5s;
+}
+
+
+
+select {
+    appearance: none;
+    color: #858282;
+
+}
+select option:hover{
+    background-color: #a09b9b;
+}
+
+select option {
+    background-color: rgba(30, 25, 25, 0.3);
+    padding: 10px;
+    color: #333;
+}
+
+
+select option:checked {
+    background-color: #8F9BB3;
+    color: #fff;
+}
+
+
+.submitButton{
+    width: 90px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    background-color: transparent;
+    color:  #858282;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.submitButton:hover{
+    color: #8a8080;
+    box-shadow: 0 0 0.15rem #8F9BB3;
+}
+
+@media screen and (max-width: 440px) {
+    .formSection {
+        width: 80%;
+    }
+}

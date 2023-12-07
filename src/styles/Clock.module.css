@@ -1,0 +1,19 @@
+.wrapper{
+    font-size: 44px;
+    color: rgb(142,122,185);
+    background: rgba(190, 184, 184, 0.06);
+    display: flex;
+    border-radius: 1rem;
+
+
+}
+.clock{
+    margin-left: 13%;
+}
+@media screen and (max-width: 440px) {
+    .wrapper{
+        width: 38vw;
+        font-size: 2rem;
+        color: #8F9BB3;
+    }
+}

@@ -1,0 +1,68 @@
+.wrapper{
+    display: flex;
+    position: absolute;
+}
+.menuButton, .menuButtonHide, .menuScrolledButton{
+    z-index: 10;
+    position: fixed;
+    width: 65px;
+    left: 2px;
+    top: 5px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    border-radius: 1rem;
+}
+.menuScrolledButton{
+    background: rgba(33, 33, 33, 0.81);
+}
+.menuButton{
+    opacity: 1;
+}
+.menuButtonHide{
+    opacity: 0;
+}
+
+.logo{
+    width: 50px;
+    transition: .3s;
+}
+.rotated{
+    transform: rotate(45deg);
+}
+.headerWrapper, .headerWrapperHidden{
+    width: 78vw;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    box-shadow: 0 0 10px rgba(9, 5, 5, 0.3);
+    backdrop-filter: blur(20px);
+    height: 55px;
+    position: fixed;
+    z-index: 1;
+    top:5px;
+    transition: left .3s;
+    background: rgba(33, 33, 33, 0.81);
+
+}
+
+.headerWrapperHidden{
+    left: -80vw;
+}
+.headerWrapper{
+    left: 17vw;
+}
+
+.section{
+    margin-left: 9%;
+    width: 25px;
+    height: 25px;
+}
+.sectionIcon{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
