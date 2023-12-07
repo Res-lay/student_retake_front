@@ -17,7 +17,7 @@ function SubjectsPage({func_logout}) {
 
 
     const axiosInstance = axios.create({
-        baseURL: 'https://students-retake-back.onrender.com/api',
+        baseURL: 'https://students-retake-91s0.onrender.com/api',
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('JwtToken')}`
         }

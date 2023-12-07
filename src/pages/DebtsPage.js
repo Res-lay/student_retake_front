@@ -13,7 +13,7 @@ function DebtsPage({func_logout}) {
     const {studentId} = useParams();
 
     const axiosInstance = axios.create({
-        baseURL: 'https://students-retake-back.onrender.com/api/student',
+        baseURL: 'https://students-retake-91s0.onrender.com/api/student',
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('JwtToken')}`
         }

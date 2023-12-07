@@ -26,7 +26,7 @@ import MobileHeader from "../components/MobileHeader";
 
 function HomePage({ func_logout }) {
     const axiosInstance = axios.create({
-        baseURL: 'https://students-retake-back.onrender.com/api',
+        baseURL: 'https://students-retake-91s0.onrender.com/api',
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('JwtToken')}`
         }
@@ -71,7 +71,7 @@ function HomePage({ func_logout }) {
     async function getDebts() {
         try {
             const response = await axios.create({
-                baseURL: "https://students-retake-back.onrender.com/api/student/get-debts",
+                baseURL: "https://students-retake-91s0.onrender.com/api/student/get-debts",
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('JwtToken')}`
                 }
@@ -112,7 +112,7 @@ function HomePage({ func_logout }) {
             const debts = await getDebts();
             setDebtsData(debts.length);
             const response = await axios.create({
-                baseURL: "https://students-retake-back.onrender.com/api/student/get-performance",
+                baseURL: "https://students-retake-91s0.onrender.com/api/student/get-performance",
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('JwtToken')}`
                 }

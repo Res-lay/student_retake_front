@@ -29,7 +29,7 @@ function LineChart(role) {
     async function getDebts() {
         try {
             const response = await axios.create({
-                baseURL: "https://students-retake-back.onrender.com/api/student/get-debts",
+                baseURL: "https://students-retake-91s0.onrender.com/api/student/get-debts",
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('JwtToken')}`
                 }
